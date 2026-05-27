@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> flexivel</title>
+</head>
+<body>
+    <h1>
+        Imagem Flexivel
+    </h1>
+    <p>Olha essa imagem que se adapta dependendo de seu dispositivo</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="img/img-p.png" type="image/png">
+        <source media="(max-width:1050px)" srcset="img/img-m.png" type="image/png">
+        <img src="img/img-g.png" alt="imagem flexivel">
+    </picture>
+    <audio controls loop>
+        <source src="midia/guanacast-33.mp3" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.wav" type="audio/wav">
+        <p>Me desculpe, seu navegador não roda qualquer tipo de audio</p>
+    </audio>
+    <audio  controls autoplay loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>Me desculpe, seu navegador não roda qualquer tipo de audio, mas você pode baixar o audi aqui -> <a href="midia/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg">baixar audio</a></p>
+    </audio>
+    
+    
+</body>
+</html>

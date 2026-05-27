@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        a {
+            color: red;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+            color: blue;
+        }
+        a:active {
+            collor:yellow;
+        }
+        a:visited {
+            color: brown;
+        }
+        a::before {
+            content: "(oi) ";
+        }
+        a::after {
+            content: " (opa)";
+        }
+        .supremo {
+            background-color: rgb(239, 204, 204);
+        }
+        .supremo:hover {
+            text-decoration: underline;
+            color: blueviolet;
+        }
+        .supremo::before {
+            content: "(sim)";
+        }
+        .supremo::after {
+            content: "(nao)"
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="#">naruto</a></li>
+        <li><a href="#" class="supremo">naruto</a></li>
+        <li><a href="#">naruto</a></li>
+    </ul>
+    
+</body>
+</html>

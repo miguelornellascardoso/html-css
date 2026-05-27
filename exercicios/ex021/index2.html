@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            background-color: gray;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0px;
+            
+        }
+        header {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            
+        }
+        header > nav {
+            background-color: rgb(89, 89, 89);
+            padding: 2px;
+            box-shadow: 4px 2.5px 3px 0px rgba(0, 0, 0, 0.436);
+        }
+        nav > a {
+            color: white;
+            margin-left: 5px;
+            text-decoration: none;
+        }      
+        nav > a:hover {
+            text-decoration: underline;
+            color: rgb(244, 204, 204);
+        }
+        main {
+            background-color: white;
+            padding: 5px;
+            margin: 10px;
+            border-radius: 7px 0px;
+            box-shadow: 5px 4px 4px rgba(0, 0, 0, 0.386);
+        }
+        main > section#noticiais {
+            background-color: rgb(218, 216, 216);
+            padding: 3px;
+        }
+        section#noticiais > article > p {
+            text-align: justify;
+            padding-left: 2px ;
+            padding-right: 2px ;
+        }
+        article.autor > p {
+            background-color: rgb(143, 142, 142);
+        }
+        footer {
+            background-color: black;
+            padding:1px;
+            margin:0px;
+        }
+        footer > p {
+            color: white;
+            text-align: center;
+            text-decoration: underline;
+        }
+        div#bola {
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background-color: white;
+            border-radius: 50%;
+        }
+            
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+         </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            <p>Esportes e motivações</p>
+        </section>
+        <section id="noticiais">
+            <article>
+                <h2>Academia é o melhor Esporte?</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum dignissimos nam, inventore quia dolor optio modi quidem fugit aliquid assumenda voluptas. Tempora cumque at beatae culpa nulla minus optio. Repellendus.</p>
+            </article>
+            <article class="autor">
+                <p>Escrito por Narutin estourador de lampada</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Criado por Miguel boladão.</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>
