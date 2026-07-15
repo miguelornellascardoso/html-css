@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="cadastro.php" method="post">
+        <label for="iest">Escolha o seu estado</label>
+        <select name="est" id="iest">
+            <optgroup label="TryHard">
+                <option value="NT">narutin</option>
+                <option value="TP" selected>type</option>
+                <option value="SL">soul</option>
+            </optgroup>
+            <optgroup label="TrueChad">
+                <option value="SL">soul</option>
+                <option value="TP">type</option>
+                <option value="NT">narutin</option>
+            </optgroup>
+        </select>
+        <p>
+            <label for="iall">Ecolha sua Profissão</label>
+            <input type="text" name="all" id="iall" list="proff">
+            <datalist id="proff">
+                <option value="SG">shinigami</option>
+                <option value="QY">quincy</option>
+                <option value="HW">hollow</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="itex">Escreva sua Review:</label><br>
+            <textarea name="tex" id="itex" cols="30" rows="10"></textarea>
+        </p>
+
+        
+
+    </form>
+    
+</body>
+</html>
