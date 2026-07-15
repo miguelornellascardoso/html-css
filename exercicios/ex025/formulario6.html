@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <h1>testando formularios</h1>
+    <form action="cadastro.php" method="post">
+        <p>
+            <label for="icolor">Escolha a Cor:</label>
+            <input type="color" name="color" id="icolor" value="#00ff00">
+        </p>
+        <p><label for="isaturação">Defina a Saturação:</label>
+        <input type="range" name="saturação" id="isaturação" min="1" max="5" value="3"></p>
+        <p>
+            <label for="iarquivo">Ecolha um arquivo para foto de perfil:</label>
+            <input type="file" name="arquivo" id="iarquivo">
+        </p>
+    </form>
+    
+</body>
+</html>
